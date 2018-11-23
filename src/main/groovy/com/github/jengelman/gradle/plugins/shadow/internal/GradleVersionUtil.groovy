@@ -33,10 +33,11 @@ class GradleVersionUtil {
 
     @SuppressWarnings("deprecation")
     WorkResult getWorkResult(boolean didWork) {
-        if (version < GradleVersion.version("4.2")) {
-            return new org.gradle.api.internal.tasks.SimpleWorkResult(didWork)
-        } else {
+//        if (version < GradleVersion.version("4.2")) {
+//
+//            return new org.gradle.api.internal.tasks.SimpleWorkResult(didWork)
+//        } else {
             org.gradle.api.tasks.WorkResults.didWork(didWork)
-        }
+//        }
     }
 }

@@ -95,7 +95,7 @@ class ShadowCopyAction implements CopyAction {
             unusedClasses = Collections.emptySet()
         }
 
-        final ZipOutputStream zipOutStr
+        ZipOutputStream zipOutStr = null
 
         try {
             zipOutStr = compressor.createArchiveOutputStream(zipFile)
